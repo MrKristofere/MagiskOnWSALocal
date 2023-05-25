@@ -119,6 +119,7 @@ jobs:
 
           echo "arch=${opts[ARCH,${{ inputs.arch }}]}" >> $GITHUB_OUTPUT
 
+          chmod +x ./build.sh
           scripts/build.sh \
             --arch ${opts[ARCH,${{ inputs.arch }}]} \
             --release-type ${opts[RELEASE_TYPE,${{ inputs.release_type }}]} \

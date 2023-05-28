@@ -68,7 +68,7 @@ jobs:
       - name: Install Dependencies
         uses: sn-o-w/cache-apt-pkgs-action@master
         with:
-          packages: setools lzip patchelf e2fsprogs aria2 p7zip-full attr unzip
+          packages: qemu-utils lzip patchelf e2fsprogs aria2 p7zip-full attr unzip
           
 
 
